@@ -1,0 +1,152 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right top, #ff4988, #ffc781, #ffcefc);
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 400px;
+  height: 500px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img {
+  margin-top: 10px;
+  width: 25%;
+}
+.star-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-family: sans-serif;
+  margin: 10px 0px 30px;
+}
+input {
+  position: relative;
+  width: 80%;
+  height: 25px;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+input:hover {
+  border-color: blue;
+}
+input:hover::placeholder {
+  color: blue;
+}
+.login-chooses {
+  display: flex;
+  align-items: baseline;
+  margin: 0px auto;
+  width: calc(80% + 20px);
+  max-height: 100px;
+  justify-content: space-between;
+}
+button {
+  width: 90px;
+  height: 46px;
+  background-color: blue;
+  border-radius: 8px;
+  border: 1px solid grey;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: sans-serif;
+
+}
+button:hover {
+  background-color: #6366f1;
+  font-size: 14px;
+  cursor: pointer;
+}
+a {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+a:hover {
+  font-size: 16px;
+}
+.register {
+  position: relative;
+  text-align: left;
+  margin: auto;
+  width: calc(80% + 20px);
+  height: 46px;
+}
+div.register a {
+  position: absolute;
+  top: 40%;
+}
+@media screen and (max-width: 480px) {
+  .login {
+    width: 300px;
+    height: 500px;
+  }
+  .login-chooses {
+    display: block;
+  }
+  input {
+    font-size: 18px;
+  }
+  button {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .forgot-password {
+    font-size: 18px;
+  }
+  .register {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  div.register a {
+    font-size: 18px;
+    margin: auto;
+  }
+}
+@media screen and ((min-width: 481px) and (max-width: 767px)) {
+  input {
+    font-size: 18px;
+  }
+  .login-chooses {
+    display: block;
+  }
+  .forgot-password {
+    font-size: 18px;
+  }
+  button {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .register {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  div.register a {
+    font-size: 18px;
+    margin: auto;
+  }
+}
